@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div>aa</div>
+</body>
+<script>
+	let source = null;
+	let userId = 7777
+	const setMessageInnerHTML = msg => {
+		console.log(msg);
+	}
+	if (window.EventSource) {
+		// 建立连接
+		source = new EventSource('http://localhost:9999/svrPush/' + userId);
+		setMessageInnerHTML("连接用户=" + userId);
+		/**
+		 * 连接一旦建立，就会触发open事件
+		 * 另一种写法：source.onopen = function (event) {}
+		 */
+		source.addEventListener('open', function (e) {
+			setMessageInnerHTML("建立连接。。。");
+		}, false);
+		/**
+		 * 客户端收到服务器发来的数据
+		 * 另一种写法：source.onmessage = function (event) {}
+		 */
+		source.addEventListener('message', function (e) {
+			setMessageInnerHTML(e.data);
+		});
+	} else {
+		setMessageInnerHTML("你的浏览器不支持SSE");
+	}
+</script>
+
+</html>

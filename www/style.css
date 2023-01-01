@@ -1,0 +1,68 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.pageWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.pageTitle {
+	width: 80vw;
+	padding: 16px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.listWrapper {
+	width: 80vw;
+	flex: 1;
+	padding: 8px;
+	margin: 16px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.extensioItem {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 4px 0;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.extensioItem:hover {
+	background-color: rgba(0, 0, 0, .05);
+}
+
+.listItemTitle {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.extenName {
+	flex: 1;
+	font-weight: 700;
+	padding-left: 8px;
+}
+
+.extenDesc {
+	padding: 8px 24px;
+	margin: 0;
+	font-weight: 100;
+	border-bottom: 1px #ccc solid;
+}

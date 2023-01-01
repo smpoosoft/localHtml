@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/module/qunit/2.19.1/qunit.min.css">
+	<title>单元测试报告</title>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+
+</body>
+<script type="text/javascript" src="/static/module/qunit/2.19.1/qunit.min.js"></script>
+<script type="module">
+  import { testFunc } from './index.js';
+	import * as userCase from './useCase/index.useCase.esm.js';
+  testFunc(userCase.default);
+</script>
+</html>

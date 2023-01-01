@@ -1,0 +1,1 @@
+import{_ as s,c as e,o as t,b as a}from"./app.0747e22e.js";const f=JSON.parse('{"title":"SSH","description":"","frontmatter":{},"headers":[],"relativePath":"scripts/ssh.md"}'),r={name:"scripts/ssh.md"},o=a("h1",{id:"ssh",tabindex:"-1"},"SSH",-1),c=[o];function n(i,_,d,p,h,l){return t(),e("div",null,c)}var u=s(r,[["render",n]]);export{f as __pageData,u as default};

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/test/module/qunit/2.19.1/qunit.min.css">
+	<title>单元测试报告</title>
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+
+</body>
+<script src="/static/test/module/qunit/2.19.1/qunit.min.js"></script>
+<!-- <script src="/static/js/newTest.js"></script> -->
+<script type="module">
+  console.log(window);
+  import { testFunc } from './unitTest.js';
+  testFunc();
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vsCode扩展</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="app" class="pageWrapper">
+		<h3 class="pageTitle">vsCode 扩展插件最佳实际</h3>
+		<ul class="listWrapper">
+			<li class="extensioItem" v-for="item of extensList" :key="item.name" @click="navTo(item.marketUrl)">
+				<p class="listItemTitle">
+					<img :src="item.icon" width="24" height="24">
+					<span class="extenName">{{ item.name }}</span>
+				</p>
+				<p class="extenDesc">{{ item.description }}</p>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="/static/module/vue/vue.3.js"></script>
+<script type="text/javascript" src="/static/data/vsCode.installed.Extension.js"></script>
+<script type="module">
+	const { createApp, ref } = Vue;
+	createApp({
+		setup() {
+			const navTo = urlStr => {
+				window.open(urlStr, '_blank');
+			}
+
+			return {
+				extensList: extensList,
+				navTo
+			};
+		}
+	}).mount('#app');
+</script>
+
+</html>

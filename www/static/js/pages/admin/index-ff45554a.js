@@ -1,0 +1,1 @@
+import"../../modulepreload-polyfill-f26481d0.js";import{o as r,c as e,a as o}from"../../runtime-dom.esm-bundler-6299a14e.js";import{_ as p}from"../../plugin-vue_export-helper-46f75680.js";o(p({},[["render",function(o,p){return r(),e("p",null,"管理员中心")}]])).mount("#app");

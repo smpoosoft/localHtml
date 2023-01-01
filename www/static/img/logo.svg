@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="140" viewBox="0 0 100 100">
+  <path d="M 52, 5 L 18, 24 L 18, 52  L 52, 33 Z" fill="#E68524">
+    <animate attributeType="XML" attributeName="fill" from="#fff" to="#E68524" dur="5s"/>
+  </path>
+  <path d="M 18, 52 L 38, 63 L 38, 41 Z" fill="#F2E2C6">
+    <animate attributeType="XML" attributeName="fill" from="#fff" to="#F2E2C6" dur="5s"/>
+  </path>
+  <path d="M 44, 73 L 78, 54 L 78, 26 L 44, 45 Z" fill="#6B6B6B">
+    <animate attributeType="XML" attributeName="fill" from="#fff" to="#6B6B6B" dur="5s"/>
+  </path>
+  <path d="M 78, 26 L 58, 15 L 58, 37 Z" fill="#C1C1C1">
+    <animate attributeType="XML" attributeName="fill" from="#fff" to="#C1C1C1" dur="5s"/>
+  </path>
+  <text id="logoTxt" x="12" y="100" font-size="22" stroke="#E68524" stroke-width=".5" stroke-dasharray="200" stroke-dashoffset="200">Smpoo
+    <animate attributeType="XML" attributeName="stroke-dashoffset" from="200" to="0" begin=".5s" dur="4s"/>
+    <animate attributeType="XML" attributeName="fill" from="transparent" to="#fff" begin="1.8" dur="3.5s"/>
+    <animate attributeType="XML" attributeName="stroke" from="#E68524" to="transparent" begin="3" dur="2s" fill="freeze"/>
+  </text>
+</svg>

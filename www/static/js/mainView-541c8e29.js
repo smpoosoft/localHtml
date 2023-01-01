@@ -1,0 +1,1 @@
+import{_ as r}from"./plugin-vue_export-helper-46f75680.js";import{o as e,c as o}from"./runtime-dom.esm-bundler-6299a14e.js";var n=r({},[["render",function(r,n){return e(),o("div",null,"首要入口视图")}]]);export{n as default};
